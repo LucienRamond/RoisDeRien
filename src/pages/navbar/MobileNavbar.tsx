@@ -1,4 +1,5 @@
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -18,54 +19,86 @@ export default function MobileNavbar() {
     <div className="flex justify-around pt-4">
       <div className="flex items-center">
         <NavigationMenu>
-          <NavigationMenuList className="flex">
+          <NavigationMenuList className="mx-1 grid grid-cols-5 items-center">
             <NavigationMenuItem>
-              <Link to={"/"} className={navigationMenuTriggerStyle()}>
-                <div className=" grid justify-items-center">
-                  <HomeIcon className="pt-1" />
-                  <div className="text-sm">Accueil</div>
+              <Link
+                to={"/"}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  " h-15 first:w-full"
+                )}
+              >
+                <div className="flex flex-col items-center">
+                  <HomeIcon className="" />
+                  <div className="hidden min-[380px]:block text-sm">
+                    Accueil
+                  </div>
                 </div>
               </Link>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link to={"/le-groupe"} className={navigationMenuTriggerStyle()}>
-                <div className="grid justify-items-center">
+              <Link
+                to={"/le-groupe"}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "  h-15 first:w-full"
+                )}
+              >
+                <div className="flex flex-col items-center">
                   <UsersIcon className="pt-1" />
-                  <div className=" text-sm">Le groupe</div>
+                  <div className="hidden min-[380px]:block text-sm ">
+                    Groupe
+                  </div>
                 </div>
               </Link>
             </NavigationMenuItem>
 
-            {/* <NavigationMenuItem>
-              <Link to={"/set-liste"} className={navigationMenuTriggerStyle()}>
-                Set liste
-              </Link>
-            </NavigationMenuItem>
-            <Separator orientation="vertical" className="h-4 bg-foreground" /> */}
             <NavigationMenuItem>
-              <Link to={"/medias"} className={navigationMenuTriggerStyle()}>
+              <Link
+                to={"/medias"}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "  h-15 first:w-full"
+                )}
+              >
                 <div className="grid justify-items-center">
                   <CameraIcon className="pt-1" />
-                  <div className=" text-sm">Médias</div>
+                  <div className="hidden min-[380px]:block text-sm">Médias</div>
                 </div>
               </Link>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link to={"/concerts"} className={navigationMenuTriggerStyle()}>
+              <Link
+                to={"/concerts"}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "  h-15 first:w-full"
+                )}
+              >
                 <div className="grid justify-items-center">
                   <CalendarDaysIcon className="pt-1" />
-                  <div className=" text-sm">Concerts</div>
+                  <div className="hidden min-[380px]:block text-sm">
+                    Concerts
+                  </div>
                 </div>
               </Link>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link to={"/contact"} className={navigationMenuTriggerStyle()}>
+              <Link
+                to={"/contact"}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "  h-15 first:w-full"
+                )}
+              >
                 <div className="grid justify-items-center">
                   <MailIcon className="pt-1" />
-                  <div className=" text-sm">Contact</div>
+                  <div className="hidden min-[380px]:block text-sm">
+                    Contact
+                  </div>
                 </div>
               </Link>
             </NavigationMenuItem>
