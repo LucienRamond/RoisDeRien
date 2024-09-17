@@ -8,15 +8,15 @@ import {
 import {
   CalendarDaysIcon,
   CameraIcon,
+  HandMetalIcon,
   HomeIcon,
   MailIcon,
-  UsersIcon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function MobileNavbar() {
   return (
-    <div className="flex justify-around pt-4">
+    <div className="flex justify-around py-4">
       <div className="flex items-center">
         <NavigationMenu>
           <NavigationMenuList className="mx-1 grid grid-cols-5 items-center">
@@ -46,7 +46,7 @@ export default function MobileNavbar() {
                 )}
               >
                 <div className="flex flex-col items-center">
-                  <UsersIcon className="pt-1" />
+                  <HandMetalIcon className="pt-1" />
                   <div className="hidden min-[380px]:block text-sm ">
                     Groupe
                   </div>

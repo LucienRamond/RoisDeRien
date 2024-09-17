@@ -3,7 +3,7 @@ import MobileNavbar from "./MobileNavbar";
 
 export default function MainNavbar() {
   return (
-    <div>
+    <div className="sm:mb-4">
       <div className="sm:block hidden">
         <Navbar />
       </div>

@@ -58,7 +58,7 @@ export default function Concerts() {
   };
 
   return (
-    <div className="min-[930px]:flex-row flex flex-col-reverse gap-4 mx-auto border border-foreground p-4 my-8 lg:max-w-[80%]  sm:max-w-[90%] min-h-[500px] sm:rounded bg-white shadow-lg">
+    <div className="min-[930px]:flex-row flex flex-col-reverse gap-4 mx-auto border border-foreground sm:p-4  lg:max-w-[80%]  sm:max-w-[90%] min-h-[60vh] sm:rounded bg-white shadow-lg">
       <div className="border w-fit mx-auto">
         <DayPicker
           showOutsideDays
@@ -75,7 +75,7 @@ export default function Concerts() {
           footer={showEventDetails()}
         />
       </div>
-      <div className="w-full border p-2">
+      <div className="w-full sm:border p-2">
         <div className=" font-bold">Concerts à venir :</div>
         <div>
           <Table className=" border rounded">

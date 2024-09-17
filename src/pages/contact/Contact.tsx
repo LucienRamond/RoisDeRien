@@ -36,7 +36,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="mx-auto border border-foreground p-4 my-8 lg:max-w-[50%]  sm:max-w-[80%] min-h-[500px] sm:rounded bg-white shadow-lg">
+    <div className="mx-auto border border-foreground p-4 lg:max-w-[50%]  sm:max-w-[80%] min-h-[500px] sm:rounded bg-white shadow-lg">
       <div>
         <h2 className="text-center text-xl font-bold">Contact</h2>
       </div>
