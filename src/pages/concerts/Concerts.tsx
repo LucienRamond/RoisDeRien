@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { fr, id } from "date-fns/locale";
+import { fr } from "date-fns/locale";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/src/style.css";
 import { Separator } from "@/components/ui/separator";
