@@ -13,31 +13,10 @@ import {
 } from "@/components/ui/table";
 import { CameraIcon, ExternalLinkIcon } from "lucide-react";
 import { Link } from "react-router-dom";
+import concerts from "./ConcertList";
 
 export default function Concerts() {
   const [selected, setSelected] = useState<Date>();
-  const [concertsList, setConcertList] = useState<Date[]>([
-    new Date("09-21-2024"),
-    new Date("09-14-2024"),
-  ]);
-
-  //Liste des concerts à venir en bdd
-  const concerts = [
-    {
-      date: "09-21-2024",
-      event: "Fête de la musique",
-      location: "Bouloc",
-      url: "www.google.fr",
-      id: 1,
-    },
-    {
-      date: "09-14-2024",
-      event: "Fête nationale",
-      location: "Bessières",
-      url: "www.google.fr",
-      id: 2,
-    },
-  ];
 
   const showEventDetails = () => {
     const match = concerts.find(
@@ -57,6 +36,12 @@ export default function Concerts() {
     );
   };
 
+  const concertsList = () => {
+    const list: Array<Date> = [];
+    concerts.forEach((concert) => list.push(new Date(concert.date)));
+    return list;
+  };
+
   return (
     <div className="min-[930px]:flex-row flex flex-col-reverse gap-4 mx-auto border border-foreground sm:p-4  lg:max-w-[80%]  sm:max-w-[90%] min-h-[60vh] sm:rounded bg-white shadow-lg">
       <div className="border w-fit mx-auto">
@@ -67,7 +52,7 @@ export default function Concerts() {
           onSelect={setSelected}
           locale={fr}
           modifiers={{
-            concerts: concertsList,
+            concerts: concertsList(),
           }}
           modifiersClassNames={{
             concerts: "calendar-event-class",
