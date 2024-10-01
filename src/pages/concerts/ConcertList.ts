@@ -5,12 +5,6 @@ const concerts = [
     location: "Bouloc",
     url: "www.google.fr",
   },
-  {
-    date: "09-14-2024",
-    event: "Fête nationale",
-    location: "Bessières",
-    url: "www.google.fr",
-  },
 ];
 
 export default concerts;
