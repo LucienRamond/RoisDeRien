@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 export default function MobileNavbar() {
   return (
-    <div className="flex justify-around py-4">
+    <div className="flex justify-around min-[380px]:py-4 py-1">
       <div className="flex items-center">
         <NavigationMenu>
           <NavigationMenuList className="mx-1 grid grid-cols-5 items-center">
@@ -25,12 +25,12 @@ export default function MobileNavbar() {
                 to={"/"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  " h-15 first:w-full"
+                  " h-14 first:w-full"
                 )}
               >
                 <div className="flex flex-col items-center">
-                  <HomeIcon className="" />
-                  <div className="hidden min-[380px]:block text-sm">
+                  <HomeIcon className=" min-[380px]:translate-y-0 translate-y-1" />
+                  <div className="min-[380px]:text-sm text-[.6rem]">
                     Accueil
                   </div>
                 </div>
@@ -42,14 +42,12 @@ export default function MobileNavbar() {
                 to={"/le-groupe"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-15 first:w-full"
+                  "  h-14 first:w-full"
                 )}
               >
                 <div className="flex flex-col items-center">
-                  <HandMetalIcon className="pt-1" />
-                  <div className="hidden min-[380px]:block text-sm ">
-                    Groupe
-                  </div>
+                  <HandMetalIcon className=" min-[380px]:translate-y-0 translate-y-1" />
+                  <div className="min-[380px]:text-sm text-[.6rem]">Groupe</div>
                 </div>
               </Link>
             </NavigationMenuItem>
@@ -59,12 +57,12 @@ export default function MobileNavbar() {
                 to={"/medias"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-15 first:w-full"
+                  "  h-14 first:w-full"
                 )}
               >
                 <div className="grid justify-items-center">
-                  <CameraIcon className="pt-1" />
-                  <div className="hidden min-[380px]:block text-sm">Médias</div>
+                  <CameraIcon className="  min-[380px]:translate-y-0 translate-y-1" />
+                  <div className="min-[380px]:text-sm text-[.6rem]">Médias</div>
                 </div>
               </Link>
             </NavigationMenuItem>
@@ -74,12 +72,12 @@ export default function MobileNavbar() {
                 to={"/concerts"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-15 first:w-full"
+                  "  h-14 first:w-full"
                 )}
               >
                 <div className="grid justify-items-center">
-                  <CalendarDaysIcon className="pt-1" />
-                  <div className="hidden min-[380px]:block text-sm">
+                  <CalendarDaysIcon className="  min-[380px]:translate-y-0 translate-y-1" />
+                  <div className="min-[380px]:text-sm text-[.6rem]">
                     Concerts
                   </div>
                 </div>
@@ -91,12 +89,12 @@ export default function MobileNavbar() {
                 to={"/contact"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-15 first:w-full"
+                  "  h-14 first:w-full"
                 )}
               >
                 <div className="grid justify-items-center">
-                  <MailIcon className="pt-1" />
-                  <div className="hidden min-[380px]:block text-sm">
+                  <MailIcon className="  min-[380px]:translate-y-0 translate-y-1" />
+                  <div className="min-[380px]:text-sm text-[.6rem]">
                     Contact
                   </div>
                 </div>

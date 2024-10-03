@@ -43,7 +43,7 @@ export default function Concerts() {
   };
 
   return (
-    <div className="min-[930px]:flex-row flex flex-col-reverse gap-4 mx-auto border border-foreground sm:p-4  lg:max-w-[80%]  sm:max-w-[90%] min-h-[60vh] sm:rounded bg-white shadow-lg">
+    <div className="min-[930px]:flex-row flex flex-col-reverse gap-4 sm:px-4  mx-auto border border-foreground py-4  lg:max-w-[80%]  sm:max-w-[90%] min-h-[60vh] sm:rounded bg-white shadow-lg">
       <div className="border w-fit mx-auto">
         <DayPicker
           showOutsideDays
@@ -55,7 +55,7 @@ export default function Concerts() {
             concerts: concertsList(),
           }}
           modifiersClassNames={{
-            concerts: "calendar-event-class",
+            concerts: "calendar-event-class ",
           }}
           footer={showEventDetails()}
         />
