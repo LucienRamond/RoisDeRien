@@ -58,7 +58,7 @@ export default function Medias() {
               {events.map((event) => {
                 return (
                   <Card
-                    className=" hover:shadow-black h-[350px] w-full cursor-pointer"
+                    className=" hover:shadow-black sm:h-[350px] h-[250px] w-full cursor-pointer"
                     onClick={() => {
                       setEvent(event);
                       setShowPhotos(true);
@@ -72,8 +72,10 @@ export default function Medias() {
                       />
                     </CardContent>
                     <CardFooter className=" h-[20%] pb-2 grid">
-                      <div className="mx-auto font-bold">{event.name}</div>
-                      <div className="mx-auto italic text-sm">
+                      <div className="mx-auto font-bold text-xs text-center">
+                        {event.name}
+                      </div>
+                      <div className="mx-auto italic sm:text-sm text-xs text-center">
                         {event.location}
                       </div>
                     </CardFooter>
