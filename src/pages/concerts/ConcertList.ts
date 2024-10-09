@@ -1,9 +1,9 @@
 const concerts = [
   {
-    date: "09-21-2024",
+    date: "06-21-2025",
     event: "Fête de la musique",
     location: "Bouloc",
-    url: "www.google.fr",
+    url: "www.mairie-bouloc.fr",
     id: 1,
   },
 ];

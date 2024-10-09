@@ -19,7 +19,7 @@ import Drum from "@/assets/icons/drum.svg";
 
 export default function Band() {
   return (
-    <div className="mx-auto border border-foreground p-4  sm:max-w-[80%] min-h-[500px] sm:rounded bg-white shadow-lg">
+    <div className="lg:max-w-[80%]  sm:max-w-[90%] mx-auto border border-foreground p-4  min-h-[500px] sm:rounded bg-white shadow-lg">
       <div>
         <h2 className="text-center text-xl font-bold">Le groupe</h2>
       </div>
