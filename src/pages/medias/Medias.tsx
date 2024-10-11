@@ -1,5 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import events from "./Events";
+import videos from "./Videos";
 import { useEffect, useState } from "react";
 import LightGallery from "lightgallery/react";
 
@@ -9,11 +10,21 @@ import lgZoom from "lightgallery/plugins/zoom";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 export default function Medias() {
   const [showPhotos, setShowPhotos] = useState(false);
   const [event, setEvent] = useState(events[0]);
+  const [video, setVideo] = useState([
+    {
+      name: "",
+      location: "",
+      title: "",
+      video: ``,
+      id: 1,
+    },
+  ]);
   const [photosList, setPhotosList] = useState<Array<string>>([]);
 
   useEffect(() => {
@@ -22,6 +33,7 @@ export default function Medias() {
       img.push(image);
     }
     setPhotosList(img);
+    setVideo(videos);
   }, [showPhotos]);
 
   return (
@@ -72,10 +84,10 @@ export default function Medias() {
                       />
                     </CardContent>
                     <CardFooter className=" h-[20%] pb-2 grid">
-                      <div className="mx-auto font-bold text-xs text-center">
+                      <div className="mx-auto font-bold sm:text-base text-xs text-center">
                         {event.name}
                       </div>
-                      <div className="mx-auto italic sm:text-sm text-xs text-center">
+                      <div className="mx-auto italic sm:text-base text-xs text-center">
                         {event.location}
                       </div>
                     </CardFooter>
@@ -85,7 +97,33 @@ export default function Medias() {
             </div>
           )}
         </TabsContent>
-        <TabsContent value="videos"></TabsContent>
+        <TabsContent value="videos">
+          <div className="grid sm:grid-cols-2 gap-2 mx-auto ">
+            {video.map((el) => {
+              return (
+                <Card className=" hover:shadow-black h-full w-full">
+                  <CardContent className="p-0 w-full">
+                    <video
+                      controls
+                      className="w-full h-full object-cover overflow-hidden border rounded-t-lg"
+                    >
+                      <source src={el.video} />
+                    </video>
+                  </CardContent>
+                  <CardFooter className="py-2 grid">
+                    <div className="mx-auto flex gap-2 font-bold sm:text-base text-xs text-center">
+                      <div>{el.name}</div>
+                      <div>{el.location}</div>
+                    </div>
+                    <div className="mx-auto italic sm:text-base text-xs text-center">
+                      {el.title}
+                    </div>
+                  </CardFooter>
+                </Card>
+              );
+            })}
+          </div>
+        </TabsContent>
       </Tabs>
     </div>
   );
