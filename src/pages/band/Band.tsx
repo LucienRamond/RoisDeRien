@@ -25,17 +25,22 @@ export default function Band() {
       </div>
       <Separator className="h-[1px] w-[80%] my-2 mx-auto bg-foreground" />
       <p className=" mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi
-        amet inventore libero accusantium delectus, odio dicta sunt tempora aut
-        quod porro pariatur consectetur doloribus. Ratione tempore, eos
-        exercitationem praesentium quidem deleniti totam quos officia quas. Est
-        saepe, nemo facere provident in pariatur. Porro nobis, inventore dolores
-        eum in quas voluptate aliquid fugit doloribus adipisci modi odit. Ipsa
-        numquam veritatis delectus vel eveniet doloribus ut, deserunt neque,
-        debitis sint autem eaque ea. Sapiente, fugiat similique. Libero sit eum
-        iusto esse delectus laudantium hic aperiam obcaecati, unde explicabo
-        fugiat. Excepturi libero quisquam aperiam a eaque tenetur autem
-        voluptatum iste maiores reiciendis!
+        Composé de 5 amis de longue date, Les Rois de Rien, c'est avant tout une
+        passion partagée pour le Rock et la bière ! Un chanteur, deux guitares
+        électriques, une hache en guise de basse et un batteur: tout ce qu'il
+        faut pour vous émoustiller vos tympans ! <br />
+        Fans incontestés de Metallica dont ils reprennent de nombreux titres ("A
+        quand le Tribute ?!" Calmez vous, ça arrive!), ils sont également
+        influencés par Nirvana, Megadeath, SOAD, ainsi que par les grands
+        classiques français : Noir Désir,Luke, Trust... <br />
+        Le leader, chanteur et multi-instrumentiste Yves, aux travers de ses
+        racines espagnoles, amène sa touche personnelle avec des reprises de
+        Ska-P, Kaotiko mais aussi un répertoire complet de chansons françaises
+        version Rock : Montand, Brel, Brassens... <br />
+        Très actifs dans le Nord Toulousain ces 10 dernières années (Bouloc,
+        Villeneuve-Lès-Bouloc, Bessières, Villaudric...), les Rois de Rien c'est
+        également de nombreuses compositions engagées tels que
+        <i>Président immigré</i>, <i>La chute</i>, <i>Plaisirs édulcorés</i>...
       </p>
       <div className="grid gap-2 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
         <Card className=" hover:shadow-black">
