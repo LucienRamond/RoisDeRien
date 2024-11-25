@@ -1,21 +1,5 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
-import Yves from "@/assets/members/yves.jpg";
-import Laurent from "@/assets/members/laurent.jpg";
-import Fred from "@/assets/members/fred.jpg";
-import Vincent from "@/assets/members/vincent.jpg";
-import Lucien from "@/assets/members/lucien.jpg";
-import Mic from "@/assets/icons/microphone.svg";
-import Guitar1 from "@/assets/icons/electric-guitar.svg";
-import Guitar2 from "@/assets/icons/electric-guitar2.svg";
-import Bass from "@/assets/icons/bass.svg";
-import Drum from "@/assets/icons/drum.svg";
+import Group from "@/pages/medias/assets/maboulrock/card.jpg";
 
 export default function Band() {
   return (
@@ -24,92 +8,34 @@ export default function Band() {
         <h2 className="text-center text-xl font-bold">Le groupe</h2>
       </div>
       <Separator className="h-[1px] w-[80%] my-2 mx-auto bg-foreground" />
-      <p className=" mb-2">
-        Composé de 5 amis de longue date, Les Rois de Rien, c'est avant tout une
-        passion partagée pour le Rock et la bière ! Un chanteur, deux guitares
-        électriques, une hache en guise de basse et un batteur: tout ce qu'il
-        faut pour vous émoustiller vos tympans ! <br />
-        Fans incontestés de Metallica dont ils reprennent de nombreux titres ("A
-        quand le Tribute ?!" Calmez vous, ça arrive!), ils sont également
-        influencés par Nirvana, Megadeath, SOAD, ainsi que par les grands
-        classiques français : Noir Désir,Luke, Trust... <br />
-        Le leader, chanteur et multi-instrumentiste Yves, aux travers de ses
-        racines espagnoles, amène sa touche personnelle avec des reprises de
-        Ska-P, Kaotiko mais aussi un répertoire complet de chansons françaises
-        version Rock : Montand, Brel, Brassens... <br />
-        Très actifs dans le Nord Toulousain ces 10 dernières années (Bouloc,
+      <p className=" mb-2 sm:p-4">
+        Composé de <b>5 amis </b>de longue date, <b>Les Rois de Rien</b>, c'est
+        avant tout une passion partagée pour <b>le Rock et la bière</b> ! Un
+        chanteur, deux guitares électriques, une hache en guise de basse et un
+        batteur: tout ce qu'il faut pour émoustiller vos tympans et vous donner
+        soif ! Fans incontestés de
+        <b> Metallica</b> dont ils reprennent de nombreux titres (
+        <i>"A quand le Tribute ?!" Calmez vous, ça arrive!</i>), ils sont
+        également influencés par <b>Nirvana</b>, <b>Megadeath</b>, <b>SOAD</b>,
+        ainsi que par les grands classiques français : <b>Noir Désir</b>,
+        <b>Luke</b>, <b>Trust</b>... <br />
+        Le leader, chanteur et multi-instrumentiste
+        <b> Yves</b>, fort de ses racines espagnoles, amène sa touche
+        personnelle avec des reprises de <b>Ska-P</b>, <b>Kaotiko</b> mais aussi
+        un répertoire complet de chansons françaises version Rock :
+        <b> Montand</b>, <b>Brel</b>,<b>Brassens</b>... <br />
+        Très actifs dans le
+        <b> Nord Toulousain</b> ces 10 dernières années (Bouloc,
         Villeneuve-Lès-Bouloc, Bessières, Villaudric...), les Rois de Rien c'est
         également de nombreuses compositions engagées tels que
-        <i>Président immigré</i>, <i>La chute</i>, <i>Plaisirs édulcorés</i>...
+        <i> Président immigré</i>, <i>La chute</i>, <i>Plaisirs édulcorés</i>...
       </p>
-      <div className="grid gap-2 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
-        <Card className=" hover:shadow-black">
-          <CardHeader>
-            <CardTitle className="text-center">Yves</CardTitle>
-          </CardHeader>
-          <CardContent className="px-0">
-            <img className="h-[270px] w-full object-cover" src={Yves} alt="" />
-          </CardContent>
-          <CardFooter>
-            <img src={Mic} alt="mic" className=" h-10 mx-auto" />
-          </CardFooter>
-        </Card>
-        <Card className=" hover:shadow-black">
-          <CardHeader>
-            <CardTitle className="text-center">Laurent</CardTitle>
-          </CardHeader>
-          <CardContent className="px-0">
-            <img
-              className="h-[270px] w-full object-cover"
-              src={Laurent}
-              alt=""
-            />
-          </CardContent>
-          <CardFooter>
-            <img src={Guitar1} alt="mic" className=" h-10 mx-auto" />
-          </CardFooter>
-        </Card>
-        <Card className=" hover:shadow-black">
-          <CardHeader>
-            <CardTitle className="text-center">Vincent</CardTitle>
-          </CardHeader>
-          <CardContent className="px-0">
-            <img
-              className="h-[270px] w-full object-cover"
-              src={Vincent}
-              alt=""
-            />
-          </CardContent>
-          <CardFooter>
-            <img src={Guitar2} alt="mic" className=" h-10 mx-auto" />
-          </CardFooter>
-        </Card>
-        <Card className=" hover:shadow-black">
-          <CardHeader>
-            <CardTitle className="text-center">Fred</CardTitle>
-          </CardHeader>
-          <CardContent className="px-0">
-            <img className="h-[270px] w-full object-cover" src={Fred} alt="" />
-          </CardContent>
-          <CardFooter>
-            <img src={Bass} alt="mic" className=" h-10 mx-auto" />
-          </CardFooter>
-        </Card>
-        <Card className=" hover:shadow-black">
-          <CardHeader>
-            <CardTitle className="text-center">Lucien</CardTitle>
-          </CardHeader>
-          <CardContent className="px-0">
-            <img
-              className="h-[270px] w-full object-cover"
-              src={Lucien}
-              alt=""
-            />
-          </CardContent>
-          <CardFooter>
-            <img src={Drum} alt="mic" className=" h-10 mx-auto" />
-          </CardFooter>
-        </Card>
+      <div className=" flex justify-center">
+        <img
+          src={Group}
+          alt=""
+          className=" max-h-[400px] border rounded-xl object-cover"
+        />
       </div>
     </div>
   );
