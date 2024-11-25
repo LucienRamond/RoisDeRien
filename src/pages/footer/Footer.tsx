@@ -14,7 +14,7 @@ export default function Footer() {
             className=" border rounded-full bg-white"
           />
         </div>
-        <div onClick={() => document.location.assign("www.google.fr")}>
+        <div onClick={() => document.location.assign("www.google.com")}>
           <img
             height="24"
             width="24"
