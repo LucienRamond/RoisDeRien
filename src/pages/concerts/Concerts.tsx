@@ -88,7 +88,7 @@ export default function Concerts() {
                       <ExternalLinkIcon
                         className=" hover:cursor-pointer"
                         color="blue"
-                        onClick={() => document.location.assign(concert.url)}
+                        onClick={() => window.open(concert.url, "__blank")}
                       />
                     </TableCell>
                   </TableRow>
