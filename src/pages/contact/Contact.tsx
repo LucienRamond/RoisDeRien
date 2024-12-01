@@ -13,11 +13,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
-import { Resend } from "resend";
 
 export default function Contact() {
-  const resend = new Resend("re_aENNUXZm_NfLkdeQVRWZ65Q4d3eVGUfhf");
-
   const formSchema = z.object({
     email: z.string().min(2).max(50),
     message: z.string().min(2).max(500),
@@ -32,14 +29,7 @@ export default function Contact() {
   });
 
   // 2. Define a submit handler.
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["delivered@resend.dev"],
-      subject: "Nouvelle prise de contact",
-      html: `<p>New message from : ${values.email}. ${values.message}</p>`,
-    });
-  }
+  async function onSubmit(values: z.infer<typeof formSchema>) {}
 
   return (
     <div className="mx-auto border border-foreground p-4 lg:max-w-[50%]  sm:max-w-[80%] min-h-[500px] sm:rounded bg-white shadow-lg">
