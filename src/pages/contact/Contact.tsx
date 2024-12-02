@@ -14,6 +14,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import { useNavigate } from "react-router-dom";
+import { Mail, PhoneCall } from "lucide-react";
+import Facebook from "../../assets/icons/facebook.svg";
 
 export default function Contact() {
   const navigate = useNavigate();
@@ -31,7 +33,6 @@ export default function Contact() {
     },
   });
 
-  // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
     fetch(
       `https://api.roisderien.fr/?email=${values.email}&message=${values.message}`
@@ -42,7 +43,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="mx-auto border border-foreground p-4 lg:max-w-[50%]  sm:max-w-[80%] min-h-[500px] sm:rounded bg-white shadow-lg">
+    <div className=" mx-auto border border-foreground p-4 lg:max-w-[50%]  sm:max-w-[80%] min-h-[500px] sm:rounded bg-white shadow-lg">
       <div>
         <h2 className="text-center text-xl font-bold">Contact</h2>
       </div>
@@ -78,6 +79,43 @@ export default function Contact() {
           <Button type="submit">Envoyer</Button>
         </form>
       </Form>
+      <Separator className="h-[1px] w-[80%] my-10 mx-auto bg-foreground" />
+      <div className=" mb-2">
+        <ul className=" grid gap-2">
+          <li className="flex gap-2">
+            <PhoneCall />
+            <a className="font-bold" href="tel:0625083101">
+              0612131213
+            </a>
+          </li>
+          <li className="flex gap-2">
+            <Mail />
+            <a href="mailto:contact@roisderien.fr" className="font-bold">
+              contact@roisderien.fr
+            </a>
+          </li>
+          <li className="flex gap-2">
+            <img
+              height="24"
+              width="24"
+              src={Facebook}
+              className=" rounded-full bg-white"
+            />
+            <div className="font-bold hover:cursor-pointer">
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/roisderien31",
+                    "__blank"
+                  )
+                }
+              >
+                @roisderien31
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
