@@ -7,6 +7,7 @@ import Concerts from "./pages/concerts/Concerts";
 import Contact from "./pages/contact/Contact";
 import MainNavbar from "./pages/navbar/MainNavbar";
 import Footer from "./pages/footer/Footer";
+import Success from "./pages/contact/Success";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/medias" element={<Medias />} />
           <Route path="/concerts" element={<Concerts />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/merci" element={<Success />} />
         </Routes>
         <Footer />
       </BrowserRouter>

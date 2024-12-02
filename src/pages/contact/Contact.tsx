@@ -13,8 +13,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+  const navigate = useNavigate();
+
   const formSchema = z.object({
     email: z.string().min(2).max(50),
     message: z.string().min(2).max(500),
@@ -34,7 +37,7 @@ export default function Contact() {
       `https://api.roisderien.fr/?email=${values.email}&message=${values.message}`
     )
       .then((response) => response.json())
-      .then((response) => console.log(response))
+      .then((response) => response["response"] == "ok" && navigate("/merci"))
       .catch((error) => console.error(error));
   }
 
