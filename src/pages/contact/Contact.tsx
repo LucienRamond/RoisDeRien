@@ -84,8 +84,8 @@ export default function Contact() {
         <ul className=" grid gap-2">
           <li className="flex gap-2">
             <PhoneCall />
-            <a className="font-bold" href="tel:0625083101">
-              0612131213
+            <a className="font-bold" href="tel:+33609153570">
+              06091535**
             </a>
           </li>
           <li className="flex gap-2">
