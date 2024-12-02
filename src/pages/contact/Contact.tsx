@@ -33,7 +33,8 @@ export default function Contact() {
     fetch(
       `https://api.roisderien.fr/?email=${values.email}&message=${values.message}`
     )
-      .then((response) => console.log(response.json()))
+      .then((response) => response.json())
+      .then((response) => console.log(response))
       .catch((error) => console.error(error));
   }
 
