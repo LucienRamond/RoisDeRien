@@ -30,9 +30,8 @@ export default function Contact() {
 
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values.email, values.message);
     fetch(
-      `http://api.roisderien.fr/?email=${values.email}&message=${values.message}`
+      `https://api.roisderien.fr/?email=${values.email}&message=${values.message}`
     )
       .then((response) => response.json())
       .then((response) => console.log(JSON.parse(response)))
