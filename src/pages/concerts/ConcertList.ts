@@ -1,11 +1,13 @@
-const concerts = [
-  {
-    date: "06-21-2025",
-    event: "Fête de la musique",
-    location: "Bouloc",
-    url: "http://www.mairie-bouloc.fr",
-    id: 1,
-  },
+import { ConcertType } from "./Concerts";
+
+const concerts: ConcertType[] = [
+  // {
+  //   date: "",
+  //   event: "",
+  //   location: "",
+  //   url: "",
+  //   id: 1,
+  // },
 ];
 
 export default concerts;
