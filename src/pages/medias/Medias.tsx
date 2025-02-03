@@ -1,36 +1,19 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import events from "./Events";
 import videos from "./Videos";
-
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import EmblaCarousel from "@/components/ui/carousel/carousel";
 
 export default function Medias() {
   const displayPhotos = (event: Record<string, () => Promise<unknown>>) => {
     const imgs = [];
-    let index = 0;
     for (const image in event) {
       imgs.push(
-        <CarouselItem key={index}>
-          <div className="p-1 h-full">
-            <Card className=" h-full">
-              <CardContent className=" h-full flex items-center justify-center p-1">
-                <img
-                  src={image}
-                  className="rounded w-full h-full object-cover overflow-hidden"
-                />
-              </CardContent>
-            </Card>
-          </div>
-        </CarouselItem>
+        <img
+          src={image}
+          className="rounded-t-lg h-full object-cover overflow-hidden"
+        />
       );
-      index++;
     }
     return imgs;
   };
@@ -43,21 +26,17 @@ export default function Medias() {
           <TabsTrigger value="videos">Vidéos</TabsTrigger>
         </TabsList>
         <TabsContent value="photos" className="grid gap-2">
-          <div className="grid sm:grid-cols-2 gap-2 mx-auto ">
+          <div className="grid lg:grid-cols-2 gap-2 mx-auto ">
             {events.map((event) => {
               return (
-                <Card className=" hover:shadow-black h-full w-full">
-                  <CardContent className=" p-0 flex justify-center">
-                    <Carousel className="w-full max-w-[80%]">
-                      <CarouselContent className=" h-[400px] lg:h-[500px] 2xl:h-[600px]">
-                        {displayPhotos(event.photos)}
-                      </CarouselContent>
-
-                      <CarouselPrevious />
-                      <CarouselNext />
-                    </Carousel>
+                <Card
+                  key={event.id}
+                  className=" hover:shadow-black border-black h-full w-full"
+                >
+                  <CardContent className=" p-0 flex justify-center border-b">
+                    <EmblaCarousel slides={displayPhotos(event.photos)} />
                   </CardContent>
-                  <CardFooter className="py-2 grid">
+                  <CardFooter className="py-1 grid">
                     <div className="mx-auto flex gap-2 font-bold sm:text-base text-center">
                       <div>{event.name}</div>
                     </div>
@@ -74,7 +53,7 @@ export default function Medias() {
           <div className="grid sm:grid-cols-2 gap-2 mx-auto ">
             {videos.map((el) => {
               return (
-                <Card className=" hover:shadow-black h-full w-full">
+                <Card key={el.id} className=" hover:shadow-black h-full w-full">
                   <CardContent className="p-0 w-full">
                     <video
                       controls
