@@ -11,7 +11,7 @@ import Success from "./pages/contact/Success";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-red-600 to-red-800 min-h-[100vh]">
+    <div id="main-div" className="bg-red-600/50 min-h-[100vh]">
       <BrowserRouter>
         <MainNavbar />
         <Routes>

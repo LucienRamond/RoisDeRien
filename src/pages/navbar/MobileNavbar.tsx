@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 export default function MobileNavbar() {
   return (
-    <div className="flex justify-around min-[380px]:py-4 py-1">
+    <div className="flex justify-around min-[380px]:py-4 py-1 bg-white/5">
       <div className="flex items-center">
         <NavigationMenu>
           <NavigationMenuList className="mx-1 grid grid-cols-5 items-center">

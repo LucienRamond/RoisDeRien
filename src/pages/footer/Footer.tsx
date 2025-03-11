@@ -5,7 +5,7 @@ export default function Footer() {
   const location = useLocation();
   return (
     <div
-      className={`flex justify-center p-4 ${
+      className={`flex text-white font-semibold justify-center p-4 ${
         location.pathname == "/" && "mt-32"
       }`}
     >

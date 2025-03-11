@@ -75,8 +75,8 @@
   }
 }
 
-/* Calendar customize */
-.calendar-event-class {
-  background-color: rgb(255, 89, 89);
-  border: 1px solid black;
+#main-div {
+  background-image: url("/src/assets/icons/bg.jpg");
+  background-size: 100%;
+  background-blend-mode: lighten;
 }
