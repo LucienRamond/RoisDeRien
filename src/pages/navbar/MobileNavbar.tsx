@@ -12,11 +12,16 @@ import {
   HomeIcon,
   MailIcon,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function MobileNavbar() {
+  const location = useLocation();
   return (
-    <div className="flex justify-around min-[380px]:py-4 py-1 bg-white/5">
+    <div
+      className={`flex justify-around min-[380px]:py-4 py-1  ${
+        location.pathname == "/" ? "bg-none" : "bg-red-600/40"
+      }`}
+    >
       <div className="flex items-center">
         <NavigationMenu>
           <NavigationMenuList className="mx-1 grid grid-cols-5 items-center">

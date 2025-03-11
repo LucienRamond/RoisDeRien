@@ -1,5 +1,5 @@
 import { Separator } from "@radix-ui/react-separator";
-import Group from "@/pages/medias/assets/maboulrock/card.jpg";
+import Group from "/assets/images/11.jpg";
 
 export default function Band() {
   return (
