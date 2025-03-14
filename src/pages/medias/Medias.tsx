@@ -37,7 +37,7 @@ export default function Medias() {
           <Dialog open={openDialog}>
             <DialogContent
               aria-describedby="Photo de concert"
-              className="rounded sm:max-w-md [&>button]:hidden p-0 gap-0 max-w-[95%] max-h-[95%] overflow-hidden"
+              className="rounded sm:w-auto [&>button]:hidden p-0 gap-0 max-w-[95%] max-h-[95%] overflow-hidden"
               onClick={() => setOpenDialog(false)}
             >
               <DialogTitle></DialogTitle>

@@ -28,7 +28,7 @@ export default function Concerts() {
                 <Card
                   id="concert-card"
                   key={concert.id}
-                  className={` bg-cover grid items-center hover:shadow-black border-black h-full w-full  text-white font-bold ${
+                  className={` bg-cover sm:h-[200px] grid items-center hover:shadow-black border-black h-full w-full  text-white font-bold ${
                     concert.id % 2 == 0
                       ? "bg-[url(/src/assets/icons/texture.jpg)]"
                       : "bg-[url(/src/assets/icons/texture2.jpg)]"
