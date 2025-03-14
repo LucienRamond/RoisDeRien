@@ -1,5 +1,6 @@
 import { Separator } from "@radix-ui/react-separator";
 import Group from "/assets/images/11.jpg";
+import SetList from "../setlist/SetList";
 
 export default function Band() {
   return (
@@ -8,7 +9,7 @@ export default function Band() {
         <h2 className="text-center text-xl font-bold">Le groupe</h2>
       </div>
       <Separator className="h-[1px] w-[80%] my-2 mx-auto bg-foreground" />
-      <p className=" mb-2 sm:p-4">
+      <p className=" mb-2 sm:p-4 max-w-[1200px] mx-auto">
         Composé de <b>5 amis </b>de longue date, <b>Les Rois de Rien</b>, c'est
         avant tout une passion partagée pour <b>le Rock et la bière</b> ! Un
         chanteur, deux guitares électriques, une hache en guise de basse et un
@@ -37,6 +38,7 @@ export default function Band() {
           className=" max-h-[400px] border rounded-xl object-cover"
         />
       </div>
+      <SetList />
     </div>
   );
 }
