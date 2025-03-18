@@ -13,7 +13,9 @@ import youtube from "../../assets/icons/youtube.png";
 export default function SetList() {
   return (
     <>
-      <div className=" font-semibold py-2 text-center border-b">Set List</div>
+      <div className=" font-semibold max-w-[800px] mx-auto py-2 text-center border-b">
+        Set List
+      </div>
       <Table className=" mx-auto max-w-[800px]">
         <TableHeader className=" bg-black/5">
           <TableRow>
@@ -28,7 +30,9 @@ export default function SetList() {
             .sort((a, b) => a.composer.localeCompare(b.composer))
             .map((song, index) => (
               <TableRow key={index}>
-                <TableCell className="font-medium p-0">{index + 1}</TableCell>
+                <TableCell className="font-medium p-0 text-center">
+                  {index + 1}
+                </TableCell>
                 <TableCell className=" px-0 ita font-semibold">
                   {song.composer}
                 </TableCell>

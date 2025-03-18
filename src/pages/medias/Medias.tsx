@@ -6,6 +6,8 @@ import { ColumnsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/columns.css";
 import videos from "./Videos";
 import events from "./Events";
+import { CameraIcon, ScrollTextIcon, VideoIcon } from "lucide-react";
+import SetList from "../setlist/SetList";
 
 export default function Medias() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -14,15 +16,24 @@ export default function Medias() {
   return (
     <div className="sm:px-4  mx-auto  lg:max-w-[80%]  sm:max-w-[90%] min-h-[60vh] sm:rounded bg-white shadow-lg">
       <Tabs defaultValue="photos">
-        <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger className=" border rounded-r-none" value="photos">
-            Photos
+        <TabsList className=" w-full grid grid-cols-3">
+          <TabsTrigger className="" value="photos">
+            <div className="flex gap-2 items-center">
+              <CameraIcon />
+              <div className=" sm:block hidden">Photos</div>
+            </div>
           </TabsTrigger>
-          <TabsTrigger
-            className="border rounded-l-none border-l-0"
-            value="videos"
-          >
-            Vidéos
+          <TabsTrigger className="" value="videos">
+            <div className="flex gap-2 items-center">
+              <VideoIcon />
+              <div className=" sm:block hidden">Vidéos</div>
+            </div>
+          </TabsTrigger>
+          <TabsTrigger className="" value="set_list">
+            <div className="flex gap-2 items-center">
+              <ScrollTextIcon />
+              <div className=" sm:block hidden">Set list</div>
+            </div>
           </TabsTrigger>
         </TabsList>
         <TabsContent value="photos">
@@ -71,6 +82,9 @@ export default function Medias() {
               );
             })}
           </div>
+        </TabsContent>
+        <TabsContent value="set_list">
+          <SetList />
         </TabsContent>
       </Tabs>
     </div>
