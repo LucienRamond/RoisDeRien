@@ -8,6 +8,7 @@ import Contact from "./pages/contact/Contact";
 import MainNavbar from "./pages/navbar/MainNavbar";
 import Footer from "./pages/footer/Footer";
 import Success from "./pages/contact/Success";
+import "./assets/fonts/Youngerthanme.ttf";
 
 function App() {
   return (

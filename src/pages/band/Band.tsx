@@ -1,6 +1,5 @@
 import { Separator } from "@radix-ui/react-separator";
 import Group from "/assets/images/11.jpg";
-import SetList from "../setlist/SetList";
 
 export default function Band() {
   return (
@@ -38,7 +37,6 @@ export default function Band() {
           className=" max-h-[400px] border rounded-xl object-cover"
         />
       </div>
-      <SetList />
     </div>
   );
 }

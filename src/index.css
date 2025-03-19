@@ -78,5 +78,24 @@
 #main-div {
   background-image: url("/src/assets/icons/bg.jpg");
   background-size: 100%;
-  background-blend-mode: lighten;
+}
+@font-face {
+  font-family: "Youngerthanme";
+  src: local("Youngerthanme"),
+    url("./assets/fonts/Youngerthanme.ttf") format("ttf");
+  font-weight: bold;
+}
+.typing-animate {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

@@ -4,10 +4,13 @@ export default function Home() {
   return (
     <div>
       <img
-        className="mt-8 sm:mt-0 my-auto mx-auto max-h-[80vh] animate-pulse"
+        className="mt-8 sm:mt-0 my-auto mx-auto max-h-[80vh] xl:w-[800px] animate-pulse"
         src={Logo}
         alt="logo"
       />
+      <div className=" font-[Youngerthanme] typing-animate text-white text-[3rem] sm:text-[5rem] lg:text-[7rem] text-center">
+        ROIS DE RIEN
+      </div>
     </div>
   );
 }
