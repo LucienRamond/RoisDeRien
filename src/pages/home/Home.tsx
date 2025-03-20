@@ -8,7 +8,7 @@ export default function Home() {
         src={Logo}
         alt="logo"
       />
-      <div className=" font-[Youngerthanme] typing-animate text-white text-[3rem] sm:text-[5rem] lg:text-[7rem] text-center">
+      <div className=" font-younger typing-animate text-white text-[3rem] sm:text-[5rem] lg:text-[7rem] text-center">
         ROIS DE RIEN
       </div>
     </div>
