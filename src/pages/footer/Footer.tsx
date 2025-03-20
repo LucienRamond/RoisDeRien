@@ -1,14 +1,8 @@
-import { useLocation } from "react-router-dom";
 import Facebook from "../../assets/icons/facebook.svg";
 
 export default function Footer() {
-  const location = useLocation();
   return (
-    <div
-      className={`flex text-white font-semibold justify-center p-4 ${
-        location.pathname == "/" && "mt-32"
-      }`}
-    >
+    <div className={`flex text-white font-semibold justify-center p-4 mt-8`}>
       <div>Lucc3 &copy; 2024 | </div>
       <div className="flex gap-2 ml-2 hover:cursor-pointer">
         <div

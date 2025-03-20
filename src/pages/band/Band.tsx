@@ -5,9 +5,11 @@ export default function Band() {
   return (
     <div className="lg:max-w-[80%]  sm:max-w-[90%] mx-auto border border-foreground p-4  min-h-[500px] sm:rounded bg-white shadow-lg">
       <div>
-        <h2 className="text-center text-xl font-bold">Le groupe</h2>
+        <h2 className="text-center text-xl font-bold div-from-top">
+          Le groupe
+        </h2>
       </div>
-      <Separator className="h-[1px] w-[80%] my-2 mx-auto bg-foreground" />
+      <Separator className="h-[1px] w-[80%] my-2 mx-auto bg-foreground div-from-left" />
       <p className=" mb-2 sm:p-4 max-w-[1200px] mx-auto">
         Composé de <b>5 amis </b>de longue date, <b>Les Rois de Rien</b>, c'est
         avant tout une passion partagée pour <b>le Rock et la bière</b> ! Un

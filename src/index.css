@@ -102,3 +102,36 @@
 .font-younger {
   font-family: "Youngerthanme", cursive !important;
 }
+.div-from-left {
+  animation: 0.5s slideinfromleft;
+}
+@keyframes slideinfromleft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.div-from-right {
+  animation: 0.5s slideinfromright;
+}
+@keyframes slideinfromright {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.div-from-top {
+  animation: 0.5s slideinfromtop;
+}
+@keyframes slideinfromtop {
+  from {
+    transform: translateY(-110%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}

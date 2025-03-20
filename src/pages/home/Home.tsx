@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <img
-        className="mt-8 sm:mt-0 my-auto mx-auto max-h-[80vh] xl:w-[800px] animate-pulse"
+        className="mt-8 sm:mt-0 my-auto mx-auto max-h-[80vh] xl:w-[600px] xl:h-auto xl:max-h-max animate-pulse"
         src={Logo}
         alt="logo"
       />

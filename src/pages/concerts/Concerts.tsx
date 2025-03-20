@@ -19,19 +19,19 @@ export interface ConcertType {
 
 export default function Concerts() {
   return (
-    <div className="sm:px-4  mx-auto py-4  lg:max-w-[80%]  sm:max-w-[90%] min-h-[60vh] sm:rounded bg-white shadow-lg">
+    <div className="sm:px-4 mx-auto py-4 lg:max-w-[80%] sm:max-w-[90%] min-h-[75vh] sm:rounded bg-white shadow-lg">
       <div className="w-full  p-2">
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-2 mx-auto ">
+        <div className="grid lg:grid-cols-2 gap-2 mx-auto ">
           {concerts &&
             concerts.map((concert: ConcertType) => {
               return (
                 <Card
                   id="concert-card"
                   key={concert.id}
-                  className={` bg-cover sm:h-[200px] grid items-center hover:shadow-black border-black h-full w-full  text-white font-bold ${
+                  className={` bg-cover sm:h-[200px] xl:max-w-[600px] xl:mx-auto grid items-center hover:shadow-black border-black h-full w-full  text-white font-bold ${
                     concert.id % 2 == 0
-                      ? "bg-[url(/src/assets/icons/texture.jpg)]"
-                      : "bg-[url(/src/assets/icons/texture2.jpg)]"
+                      ? "bg-[url(/src/assets/icons/texture.jpg)] div-from-right"
+                      : "bg-[url(/src/assets/icons/texture2.jpg)] div-from-left"
                   }`}
                 >
                   <CardHeader className=" text-xl p-1 text-center bg-black/10">

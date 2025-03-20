@@ -45,11 +45,14 @@ export default function Contact() {
   return (
     <div className=" mx-auto border border-foreground p-4 lg:max-w-[50%]  sm:max-w-[80%] min-h-[500px] sm:rounded bg-white shadow-lg">
       <div>
-        <h2 className="text-center text-xl font-bold">Contact</h2>
+        <h2 className="text-center text-xl font-bold div-from-top">Contact</h2>
       </div>
-      <Separator className="h-[1px] w-[80%] my-2 mx-auto bg-foreground" />
+      <Separator className="h-[1px] w-[80%] my-2 mx-auto bg-foreground div-from-left" />
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-8 grid "
+        >
           <FormField
             control={form.control}
             name="email"
@@ -76,7 +79,12 @@ export default function Contact() {
               </FormItem>
             )}
           />
-          <Button type="submit">Envoyer</Button>
+          <Button
+            type="submit"
+            className=" w-full max-w-[500px] justify-self-center"
+          >
+            Envoyer
+          </Button>
         </form>
       </Form>
       <Separator className="h-[1px] w-[80%] my-10 mx-auto bg-foreground" />
