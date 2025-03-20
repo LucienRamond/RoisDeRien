@@ -82,7 +82,7 @@
 @font-face {
   font-family: "Youngerthanme";
   src: local("Youngerthanme"),
-    url("./assets/fonts/Youngerthanme.ttf") format("ttf");
+    url("./assets/fonts/Youngerthanme.ttf") format("truetype");
   font-weight: bold;
 }
 .typing-animate {
