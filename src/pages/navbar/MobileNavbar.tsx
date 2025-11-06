@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 export default function MobileNavbar() {
   return (
-    <div className={`flex justify-around text-white min-[380px]:py-4 py-1  `}>
+    <div className={`flex justify-around text-white min-[380px]:py-2 py-1  `}>
       <div className="flex items-center">
         <NavigationMenu>
           <NavigationMenuList className="mx-1 grid grid-cols-5 items-center">
@@ -29,10 +29,8 @@ export default function MobileNavbar() {
                 )}
               >
                 <div className="flex flex-col items-center">
-                  <HomeIcon className=" min-[380px]:translate-y-0 translate-y-1" />
-                  <div className="min-[380px]:text-sm text-[.6rem]">
-                    Accueil
-                  </div>
+                  <HomeIcon className="  translate-y-1" />
+                  <div className="text-[.7rem]">Accueil</div>
                 </div>
               </Link>
             </NavigationMenuItem>
@@ -46,8 +44,8 @@ export default function MobileNavbar() {
                 )}
               >
                 <div className="flex flex-col items-center">
-                  <HandMetalIcon className=" min-[380px]:translate-y-0 translate-y-1" />
-                  <div className="min-[380px]:text-sm text-[.6rem]">Groupe</div>
+                  <HandMetalIcon className="  translate-y-1" />
+                  <div className="text-[.7rem]">Groupe</div>
                 </div>
               </Link>
             </NavigationMenuItem>
@@ -61,8 +59,8 @@ export default function MobileNavbar() {
                 )}
               >
                 <div className="grid justify-items-center">
-                  <CameraIcon className="  min-[380px]:translate-y-0 translate-y-1" />
-                  <div className="min-[380px]:text-sm text-[.6rem]">Médias</div>
+                  <CameraIcon className="  translate-y-1" />
+                  <div className="text-[.7rem]">Médias</div>
                 </div>
               </Link>
             </NavigationMenuItem>
@@ -76,10 +74,8 @@ export default function MobileNavbar() {
                 )}
               >
                 <div className="grid justify-items-center">
-                  <CalendarDaysIcon className="  min-[380px]:translate-y-0 translate-y-1" />
-                  <div className="min-[380px]:text-sm text-[.6rem]">
-                    Concerts
-                  </div>
+                  <CalendarDaysIcon className="  translate-y-1" />
+                  <div className="text-[.7rem]">Concerts</div>
                 </div>
               </Link>
             </NavigationMenuItem>
@@ -93,10 +89,8 @@ export default function MobileNavbar() {
                 )}
               >
                 <div className="grid justify-items-center">
-                  <MailIcon className="  min-[380px]:translate-y-0 translate-y-1" />
-                  <div className="min-[380px]:text-sm text-[.6rem]">
-                    Contact
-                  </div>
+                  <MailIcon className="  translate-y-1" />
+                  <div className="text-[.7rem]">Contact</div>
                 </div>
               </Link>
             </NavigationMenuItem>
