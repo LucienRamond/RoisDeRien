@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "@/assets/logo-navbar.png";
+import LogoEyes from "@/assets/logo-eyes.png";
 
 export default function Navbar() {
   const location = useLocation();
@@ -38,6 +39,11 @@ export default function Navbar() {
                   src={Logo}
                   alt="logo"
                 />
+                <img
+                  className=" h-[120px] absolute translate-y-[-100%] animate-pulse"
+                  src={LogoEyes}
+                  alt="logo"
+                />
               </Link>
             </NavigationMenuItem>
 
@@ -46,7 +52,7 @@ export default function Navbar() {
                 Concerts
               </Link>
             </NavigationMenuItem>
-            {/* <Separator orientation="vertical" className="h-4 bg-white" /> */}
+
             <NavigationMenuItem>
               <Link to={"/contact"} className={navigationMenuTriggerStyle()}>
                 Contact

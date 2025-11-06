@@ -9,10 +9,11 @@ import {
   CalendarDaysIcon,
   CameraIcon,
   HandMetalIcon,
-  HomeIcon,
   MailIcon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import Logo from "@/assets/logo-navbar.png";
+import LogoEyes from "@/assets/logo-eyes.png";
 
 export default function MobileNavbar() {
   return (
@@ -22,25 +23,10 @@ export default function MobileNavbar() {
           <NavigationMenuList className="mx-1 grid grid-cols-5 items-center">
             <NavigationMenuItem>
               <Link
-                to={"/"}
-                className={cn(
-                  navigationMenuTriggerStyle(),
-                  " h-14 first:w-full"
-                )}
-              >
-                <div className="flex flex-col items-center">
-                  <HomeIcon className="  translate-y-1" />
-                  <div className="text-[.7rem]">Accueil</div>
-                </div>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link
                 to={"/le-groupe"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-14 first:w-full"
+                  "  h-full first:w-full"
                 )}
               >
                 <div className="flex flex-col items-center">
@@ -55,7 +41,7 @@ export default function MobileNavbar() {
                 to={"/medias"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-14 first:w-full"
+                  "  h-full first:w-full"
                 )}
               >
                 <div className="grid justify-items-center">
@@ -66,11 +52,22 @@ export default function MobileNavbar() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
+              <Link to={"/"} className=" relative">
+                <img className=" h-fit" src={Logo} alt="logo" />
+                <img
+                  className=" h-fit absolute translate-y-[-100%] animate-pulse"
+                  src={LogoEyes}
+                  alt="logo"
+                />
+              </Link>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
               <Link
                 to={"/concerts"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-14 first:w-full"
+                  "  h-full first:w-full"
                 )}
               >
                 <div className="grid justify-items-center">
@@ -85,7 +82,7 @@ export default function MobileNavbar() {
                 to={"/contact"}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "  h-14 first:w-full"
+                  "  h-full first:w-full"
                 )}
               >
                 <div className="grid justify-items-center">
