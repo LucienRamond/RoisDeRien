@@ -3,7 +3,7 @@ import Group from "/assets/images/11.jpg";
 
 export default function Band() {
   return (
-    <div className="lg:max-w-[80%]  sm:max-w-[90%] mx-auto border border-foreground p-4  min-h-[500px] sm:rounded bg-white shadow-lg">
+    <div className="lg:max-w-[75%]  sm:max-w-[90%] mx-auto border border-foreground p-4  min-h-[500px] sm:rounded bg-white shadow-lg">
       <div>
         <h2 className="text-center text-xl font-bold div-from-top">
           Le groupe

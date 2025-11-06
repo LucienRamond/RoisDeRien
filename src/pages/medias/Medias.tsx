@@ -14,22 +14,22 @@ export default function Medias() {
   const [dialogImg, setDialogImg] = useState("");
 
   return (
-    <div className="sm:px-4  mx-auto  lg:max-w-[80%]  sm:max-w-[90%] min-h-[60vh] sm:rounded bg-white shadow-lg">
+    <div className="lg:max-w-[75%]  sm:max-w-[90%] mx-auto border border-foreground p-4  min-h-[500px] sm:rounded bg-white shadow-lg">
       <Tabs defaultValue="photos">
-        <TabsList className=" w-full grid grid-cols-3">
-          <TabsTrigger className="" value="photos">
+        <TabsList className=" rounded-none w-full grid grid-cols-3 p-0 bg-white">
+          <TabsTrigger value="photos" className=" rounded-none">
             <div className="flex gap-2 items-center">
               <CameraIcon />
               <div className=" sm:block hidden">Photos</div>
             </div>
           </TabsTrigger>
-          <TabsTrigger className="" value="videos">
+          <TabsTrigger className=" rounded-none" value="videos">
             <div className="flex gap-2 items-center">
               <VideoIcon />
               <div className=" sm:block hidden">Vidéos</div>
             </div>
           </TabsTrigger>
-          <TabsTrigger className="" value="set_list">
+          <TabsTrigger className=" rounded-none" value="set_list">
             <div className="flex gap-2 items-center">
               <ScrollTextIcon />
               <div className=" sm:block hidden">Set list</div>
@@ -52,12 +52,12 @@ export default function Medias() {
               onClick={() => setOpenDialog(false)}
             >
               <DialogTitle></DialogTitle>
-              <img className="" src={dialogImg} />
+              <img src={dialogImg} />
             </DialogContent>
           </Dialog>
         </TabsContent>
         <TabsContent value="videos">
-          <div className="grid sm:grid-cols-2 gap-2 mx-auto ">
+          <div className="grid sm:grid-cols-2 gap-2 mx-auto p-2 ">
             {videos.map((el) => {
               return (
                 <Card key={el.id} className=" hover:shadow-black h-full w-full">

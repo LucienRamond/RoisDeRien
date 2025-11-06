@@ -18,7 +18,7 @@ export interface ConcertType {
 
 export default function Concerts() {
   return (
-    <div className="sm:px-4 mx-auto py-4 min-h-[73vh] bg-white/80 shadow-lg">
+    <div className="lg:max-w-[75%]  sm:max-w-[90%] mx-auto border border-foreground p-4 min-h-[73vh] sm:rounded bg-white shadow-lg">
       <div className="max-w-[1200px] mx-auto p-2">
         <div className="grid sm:grid-cols-2 gap-2 sm:justify-center justify-center">
           {concerts &&
