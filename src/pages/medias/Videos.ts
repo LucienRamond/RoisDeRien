@@ -4,6 +4,7 @@ const videos = [
     location: "Bouloc (31)",
     title: "Ska-p - A la mierda",
     video: `./assets/videos/bouloc/alamierda.mp4`,
+    img: `./assets/videos/bouloc/alamierda_img.png`,
     id: 3,
   },
   {
@@ -11,6 +12,7 @@ const videos = [
     location: "Bouloc (31)",
     title: "Nirvana - Smells like teen spirit",
     video: `./assets/videos/bouloc/nirvana.mp4`,
+    img: `./assets/videos/bouloc/nirvana_img.png`,
     id: 1,
   },
   {
@@ -18,6 +20,7 @@ const videos = [
     location: "Bouloc (31)",
     title: "Niño soldado - Ska-p",
     video: `./assets/videos/bouloc/nino.mp4`,
+    img: `./assets/videos/bouloc/nino_img.png`,
     id: 2,
   },
 
@@ -26,6 +29,7 @@ const videos = [
     location: "Bouloc (31)",
     title: "Jacques Brel - Amsterdam",
     video: `./assets/videos/bouloc/amsterdam.mp4`,
+    img: `./assets/videos/bouloc/amsterdam_img.png`,
     id: 4,
   },
   {
@@ -33,6 +37,7 @@ const videos = [
     location: "Labège",
     title: "La fille du coupeur de joint - Thiéfaine",
     video: `./assets/videos/labege1/labege1.mp4`,
+    img: `./assets/videos/labege1/labege1_img.png`,
     id: 5,
   },
   {
@@ -40,6 +45,7 @@ const videos = [
     location: "Labège",
     title: "Un jour en France - Noir Désir",
     video: `./assets/videos/labege2/labege2.mp4`,
+    img: `./assets/videos/labege2/labege2_img.png`,
     id: 6,
   },
 ];

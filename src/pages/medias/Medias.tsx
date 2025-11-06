@@ -65,6 +65,7 @@ export default function Medias() {
                     <video
                       controls
                       className="w-full h-full object-cover overflow-hidden border rounded-t-lg"
+                      poster={el.img}
                     >
                       <source src={el.video} />
                     </video>
