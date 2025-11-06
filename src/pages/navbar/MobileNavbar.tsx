@@ -53,9 +53,9 @@ export default function MobileNavbar() {
 
             <NavigationMenuItem>
               <Link to={"/"} className=" relative">
-                <img className=" h-fit" src={Logo} alt="logo" />
+                <img className=" w-fit" src={Logo} alt="logo" />
                 <img
-                  className=" h-fit absolute translate-y-[-100%] animate-pulse"
+                  className=" w-fit absolute translate-y-[-100%] animate-pulse"
                   src={LogoEyes}
                   alt="logo"
                 />
