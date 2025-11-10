@@ -13,16 +13,19 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex  text-white  justify-around pl-4 pr-4 pt-4 ${
+      className={`flex  text-white  mb-12 justify-around pl-4 pr-4 pt-14 ${
         location.pathname == "/" &&
         "opacity-10 hover:opacity-100 transition duration-700 ease-in-out "
       }`}
     >
-      <div className="flex items-center">
+      <div className="flex items-center bg-white text-black rounded-md h-10">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link to={"/le-groupe"} className={navigationMenuTriggerStyle()}>
+              <Link
+                to={"/le-groupe"}
+                className={`${navigationMenuTriggerStyle()}`}
+              >
                 Le groupe
               </Link>
             </NavigationMenuItem>

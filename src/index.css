@@ -78,6 +78,7 @@
 #main-div {
   background-image: url("/src/assets/icons/bg.jpg");
   background-size: 100%;
+  font-family: "Verdana";
 }
 @font-face {
   font-family: "Youngerthanme";

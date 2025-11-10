@@ -20,19 +20,21 @@ export default function Medias() {
           <TabsTrigger value="photos" className=" rounded-none">
             <div className="flex gap-2 items-center">
               <CameraIcon />
-              <div className=" sm:block hidden">Photos</div>
+              <div className=" sm:block hidden font-bold uppercase">Photos</div>
             </div>
           </TabsTrigger>
           <TabsTrigger className=" rounded-none" value="videos">
             <div className="flex gap-2 items-center">
               <VideoIcon />
-              <div className=" sm:block hidden">Vidéos</div>
+              <div className=" sm:block hidden font-bold uppercase">Vidéos</div>
             </div>
           </TabsTrigger>
           <TabsTrigger className=" rounded-none" value="set_list">
             <div className="flex gap-2 items-center">
               <ScrollTextIcon />
-              <div className=" sm:block hidden">Set list</div>
+              <div className=" sm:block hidden font-bold uppercase">
+                Set list
+              </div>
             </div>
           </TabsTrigger>
         </TabsList>
