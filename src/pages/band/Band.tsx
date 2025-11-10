@@ -21,17 +21,27 @@ export default function Band() {
         également influencés par <b>Nirvana</b>, <b>Megadeath</b>, <b>SOAD</b>,
         ainsi que par les grands classiques français : <b>Noir Désir</b>,
         <b>Luke</b>, <b>Trust</b>... <br />
+        <a>Yves Ciutat - Musicien</a>
         Le leader, chanteur et multi-instrumentiste
-        <b> Yves</b>, fort de ses racines espagnoles, amène sa touche
-        personnelle avec des reprises de <b>Ska-P</b>, <b>Kaotiko</b> mais aussi
-        un répertoire complet de chansons françaises version Rock :
-        <b> Montand</b>, <b>Brel</b>,<b>Brassens</b>... <br />
+        <b> Yves </b>(
+        <a
+          className=" text-blue-700 underline"
+          href="https://www.facebook.com/profile.php?id=61567011107705&locale=fr_FR"
+          target="_blank"
+        >
+          Yves Ciutat - Musicien
+        </a>
+        ), fort de ses racines espagnoles, amène sa touche personnelle avec des
+        reprises de <b>Ska-P</b>, <b>Kaotiko</b> mais aussi un répertoire
+        complet de chansons françaises version Rock :<b> Montand</b>,{" "}
+        <b>Brel</b>,<b>Brassens</b>... <br />
         Très actifs dans le
         <b> Nord Toulousain</b> ces 10 dernières années (Bouloc,
         Villeneuve-Lès-Bouloc, Bessières, Villaudric...), les Rois de Rien c'est
         également de nombreuses compositions engagées tels que
         <i> Président immigré</i>, <i>La chute</i>, <i>Plaisirs édulcorés</i>...
       </p>
+
       <div className=" flex justify-center">
         <img
           src={Group}

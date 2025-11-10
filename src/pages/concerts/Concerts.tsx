@@ -21,7 +21,7 @@ export default function Concerts() {
     <div className="lg:max-w-[75%]  sm:max-w-[90%] mx-auto border border-foreground p-4 min-h-[73vh] sm:rounded bg-white shadow-lg">
       <div className=" grid grid-cols-[1fr_max-content_1fr] text-center items-center">
         <Separator className="bg-black" />
-        <div className="px-2 font-bold">Concerts à venir</div>
+        <div className="px-2 font-bold text-xl">Concerts à venir</div>
         <Separator className="bg-black" />
       </div>
 
@@ -79,7 +79,7 @@ export default function Concerts() {
 
       <div className=" grid grid-cols-[1fr_max-content_1fr] text-center items-center">
         <Separator className="bg-black" />
-        <div className="px-2 font-bold">Concerts passés</div>
+        <div className="px-2 font-bold text-xl">Concerts passés</div>
         <Separator className="bg-black" />
       </div>
 
