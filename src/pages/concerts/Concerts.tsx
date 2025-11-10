@@ -62,7 +62,9 @@ export default function Concerts() {
                       className={`${concert.id % 2 != 0 && " ml-auto"} w-[50%]`}
                     />
                     <CardFooter
-                      className={`${concert.id % 2 != 0 && "justify-end"}`}
+                      className={`${
+                        concert.id % 2 != 0 && "justify-end"
+                      }  px-0`}
                     >
                       ({concert.location})
                     </CardFooter>
@@ -119,7 +121,7 @@ export default function Concerts() {
                     className={`${concert.id % 2 != 0 && " ml-auto"} w-[50%]`}
                   />
                   <CardFooter
-                    className={`${concert.id % 2 != 0 && "justify-end"}`}
+                    className={`${concert.id % 2 != 0 && "justify-end"} px-0`}
                   >
                     ({concert.location})
                   </CardFooter>

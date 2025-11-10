@@ -38,6 +38,20 @@ const past_concerts: ConcertType[] = [
     url: "https://www.facebook.com/profile.php?id=100087083387046&sk=about&locale=fr_FR",
     id: 5,
   },
+  {
+    date: "11/27/2019",
+    event: "Rois de Rien - Acoustique",
+    location: "V and B de Labège",
+    url: "https://www.facebook.com/VandBLabege/",
+    id: 6,
+  },
+  {
+    date: "09/21/2019",
+    event: "Rois de Rien - Electrique",
+    location: "Beers and Bretzels Rouffiac",
+    url: "https://www.facebook.com/beersandbretzels?locale=fr_FR",
+    id: 7,
+  },
 ];
 
 export { upcoming_concert, past_concerts };
