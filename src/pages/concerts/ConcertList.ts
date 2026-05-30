@@ -1,6 +1,14 @@
 import { ConcertType } from "./Concerts";
 
-const upcoming_concert: ConcertType[] = [];
+const upcoming_concert: ConcertType[] = [
+  {
+    date: "06/21/2026",
+    event: "Fête de la musique",
+    location: "Villeneuve-Lès-Bouloc 31",
+    url: "https://www.facebook.com/profile.php?id=100009531731456",
+    id: 1,
+  },
+];
 
 const past_concerts: ConcertType[] = [
   {

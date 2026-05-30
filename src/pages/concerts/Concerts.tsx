@@ -27,7 +27,7 @@ export default function Concerts() {
 
       {upcoming_concert.length != 0 && (
         <div className=" mx-auto p-2">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-center">
+          <div className="flex gap-2 justify-center w-full ">
             {upcoming_concert &&
               upcoming_concert.map((concert: ConcertType) => {
                 return (
